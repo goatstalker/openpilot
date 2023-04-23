@@ -86,7 +86,7 @@ class CarInterface(CarInterfaceBase):
       ret.mass = 1568. + STD_CARGO_KG
       ret.wheelbase = 2.75
       ret.centerToFront = ret.wheelbase * 0.5
-      ret.steerRatio = 13.5   
+      ret.steerRatio = 17
       ret.steerActuatorDelay = 0.3   # attempt initial values similar to ascent 
       ret.lateralTuning.init('pid')
       ret.lateralTuning.pid.kf = 0.00003   # attempt initial values similar to ascent 
