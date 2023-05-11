@@ -91,7 +91,7 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.init('pid')
       ret.lateralTuning.pid.kf = 0.00006
       ret.lateralTuning.pid.kiBP, ret.lateralTuning.pid.kpBP = [[0., 9., 20.], [0., 9., 20.]]
-      ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.01, 0.23], [0.001, 0.027]]
+      ret.lateralTuning.pid.kpV, ret.lateralTuning.pid.kiV = [[0.01, 0.11, 0.23], [0.001, 0.013 0.027]]
 
     elif candidate in (CAR.FORESTER_PREGLOBAL, CAR.OUTBACK_PREGLOBAL_2018):
       ret.safetyConfigs[0].safetyParam = 1  # Outback 2018-2019 and Forester have reversed driver torque signal
